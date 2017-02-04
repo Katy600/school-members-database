@@ -1,4 +1,4 @@
-require_relative 'spec_helper'
+require_relative '../spec_helper'
 describe Member do
   it "has a name" do
     expect(subject).to respond_to(:name)

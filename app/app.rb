@@ -5,5 +5,5 @@ require_relative 'models/members'
 
 
 # @member = Member.create(name: "Katy", email: "katy@email.com")
-
+#
 # puts @member.inspect

@@ -7,5 +7,5 @@ class Member
 end
 
 # @member = Member.create(name: "Katy", email: "katy@email.com")
-@members = Member.new
-puts @members.inspect
+# @members = Member.new
+# puts @members.inspect
