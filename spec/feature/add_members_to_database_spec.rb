@@ -3,7 +3,6 @@ require 'dm-postgres-adapter'
 require 'spec_helper'
 
 feature 'Viewing input_members_details' do
-
   scenario 'I can see a field to input a new members name' do
     # Member.create(name: "Katy", email: "katy@email.com")
     # School.create(name: "Makers Academy")
