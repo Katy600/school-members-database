@@ -3,13 +3,12 @@ require 'sinatra/base'
 require_relative "models/data_mapper_setup"
 require_relative 'models/members'
 require_relative 'models/school'
-
 class SchoolMembersDatabase < Sinatra::Base
   set :sessions, true
-  run! if app_file == $0
-
+  p @member = Member.new
+# p @member = Member.create(name: "Katy", email: "katy@email.com")
   get '/' do
-    "hello"
+    "Hello"
   end
   # get '/' do
   #   redirect '/input_details'
@@ -17,10 +16,11 @@ class SchoolMembersDatabase < Sinatra::Base
   #
   get '/input_details' do
     'Add New Members'
+    # erb :'input_members_details/index'
   end
   # get '/input_details' do
   #   @members = Members.all
   #   erb :input_members_details
   # end
-
+ run! if app_file == $0
 end
