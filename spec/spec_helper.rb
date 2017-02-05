@@ -5,7 +5,9 @@ require 'rspec'
 require 'database_cleaner'
 require './app/models/members'
 require 'sinatra/base'
+require 'dm-postgres-adapter'
 require './app/app'
+require "data_mapper"
 # require_relative './features/web_helpers'
 # ENV['RACK_ENV'] = 'test'
 require File.join(File.dirname(__FILE__), '..', 'app/app.rb')

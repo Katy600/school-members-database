@@ -1,6 +1,4 @@
-require 'data_mapper'
-require 'spec_helper'
-# require 'data_mapper_setup'
+require_relative 'data_mapper_setup'
 
 class School
   include DataMapper::Resource
