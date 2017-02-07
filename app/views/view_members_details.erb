@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>School Members Database</title
+</head>
+  <body>
+    <h1>View Members Details</h1>
+    <ul id='view_details'>
+    <% @members.each do |member| %>
+    <li>
+      First Name: <%= member.first_name %>
+      Last Name: <%= member.second_name %>
+      Email:     <%= member.email %>
+    </li>
+    <% end %>
+    </ul>
+    </form>
+  </body>
+</html>

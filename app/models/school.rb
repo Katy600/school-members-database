@@ -1,11 +1,11 @@
-require_relative 'data_mapper_setup'
-database_setup
-
+require 'data_mapper'
 class School
   include DataMapper::Resource
 
-  property :id,    Serial
-  property :name,  String
-end
+  property :id,         Serial
+  property :school,     String
+  property :member_id,  Integer
 
-DataMapper.finalize
+
+  has n, :members, :through => Resource
+end

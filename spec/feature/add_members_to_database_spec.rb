@@ -12,13 +12,13 @@ feature 'Viewing input_members_details' do
     expect(page).to have_content('Add New Members')
   end
 
-  # scenario 'I can see a field to input a new members name' do
-  #   # Member.create(name: "Katy", email: "katy@email.com")
-  #   # School.create(name: "Makers Academy")
-  #
-  #
-  #   within 'ul#input_members_details' do
-  #     expect(page).to have_content('Add New Members')
-  #   end
-  # end
+ scenario "it gives me feedback when I have succesfully added a new member" do
+    visit '/input_details/new'
+    fill_in :first_name, with: 'Katy'
+    fill_in :second_name, with: 'McCann'
+    fill_in :email, with: 'user@example.com'
+    fill_in :school, with: 'Makers Academy'
+    click_button 'Submit'
+    expect(page).to have_content "Add New Members"
+   end
 end
