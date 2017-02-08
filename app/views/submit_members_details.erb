@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
-<head>
+  <html>
+  <head>
   <meta charset="utf-8">
-  <title>School Members Database</title
-</head>
+  <title>School Members Database</title>
+  </head>
   <body>
-    <h1>Add New Members </h1>
-    <a href='/submit_details'> Sign up a new member </a>
-    <form action="/input_details" method="GET" target="_blank">
-      First name: <input type="text" name="fname"><br>
-      Last name: <input type="text" name="lname"><br>
-      Email: <input type="text" name="email"><br>
-      School: <input type="text" name="school"><br>
-      <input type="submit" value="Submit">
-    </form>
+  <h1>Add New Members </h1>
+  <a href='/input_details'> Sign up a new member </a>
+  <form action="/input_details" method="post">
+    First name: <input type="text" name="first_name"><br>
+    Last name: <input type="text" name="second_name"><br>
+    Email: <input type="text" name="email"><br>
+    School: <input type="text" name="school_id"><br>
+    <input type="submit" value="Submit">
+  </form>
   </body>
-</html>
+  </html>

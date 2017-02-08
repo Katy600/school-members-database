@@ -6,7 +6,7 @@ class Member
   property :first_name,    String
   property :second_name,   String
   property :email,         String
-  property :school,        Integer
+  property :school_id,     Integer
 
   has n, :schools, :through => Resource
 end

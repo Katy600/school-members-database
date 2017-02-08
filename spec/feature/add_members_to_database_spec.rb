@@ -13,7 +13,7 @@ feature 'Viewing input_members_details' do
   end
 
  scenario "it gives me feedback when I have succesfully added a new member" do
-    visit '/input_details/new'
+    visit '/input_details'
     fill_in :first_name, with: 'Katy'
     fill_in :second_name, with: 'McCann'
     fill_in :email, with: 'user@example.com'
